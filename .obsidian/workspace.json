@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "XSS/Doom XSS.md",
+                "file": "XSS/XSS Discovery.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Doom XSS"
+              "title": "XSS Discovery"
             }
           }
         ]
@@ -185,10 +185,11 @@
   },
   "active": "ecc4a7e128f3ef9f",
   "lastOpenFiles": [
+    "XSS/Doom XSS.md",
+    "XSS/XSS Discovery.md",
     "XSS/Introduccion.md",
     "XSS/Stored XSS.md",
     "XSS/Reflected XSS.md",
-    "XSS/Doom XSS.md",
     "XSS"
   ]
 }

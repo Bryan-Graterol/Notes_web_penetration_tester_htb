@@ -68,3 +68,5 @@ http://SERVER_IP:PORT/#task=<img src='' onerror=alert(window.origin)>
 ![To-Do List with input 'or=alert(window.origin)>' and 'Add' button. Popup with IP 46.101.23.188:32648 and 'OK' button.](https://cdn.services-k8s.prod.aws.htb.systems/content/modules/103/xss_dom_alert.jpg)
 
 To target a user with this DOM XSS vulnerability, we can once again copy the URL from the browser and share it with them, and once they visit it, the JavaScript code should execute. Both of these payloads are among the most basic XSS payloads. There are many instances where we may need to use various payloads depending on the security of the web application and the browser, which we will discuss in the next section.
+
+NEXT:[[XSS Discovery]]
