@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "XSS/XSS Discovery.md",
+                "file": "XSS/XSS_Cheatsheet.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XSS Discovery"
+              "title": "XSS_Cheatsheet"
             }
           }
         ]
@@ -183,10 +183,13 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ecc4a7e128f3ef9f",
+  "active": "ace33301686269ab",
   "lastOpenFiles": [
-    "XSS/Doom XSS.md",
+    "XSS/Cross-Site Scripting (XSS) - cheatsheet.pdf",
     "XSS/XSS Discovery.md",
+    "XSS/XSS_Cheatsheet.md",
+    "XSS/XSS_Cheatsheet.md.tmp.497236.0b9fafc2830b",
+    "XSS/Doom XSS.md",
     "XSS/Introduccion.md",
     "XSS/Stored XSS.md",
     "XSS/Reflected XSS.md",
