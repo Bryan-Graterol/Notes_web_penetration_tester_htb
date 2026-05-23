@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cb94b928e395da14",
+        "id": "2738c447ec898429",
         "type": "tabs",
         "children": [
           {
-            "id": "ecc4a7e128f3ef9f",
+            "id": "e62731235391b10d",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -185,9 +185,12 @@
   },
   "active": "ace33301686269ab",
   "lastOpenFiles": [
-    "XSS/Cross-Site Scripting (XSS) - cheatsheet.pdf",
-    "XSS/XSS Discovery.md",
     "XSS/XSS_Cheatsheet.md",
+    "XSS/Session Hijacking.md",
+    "XSS/Phishing.md",
+    "XSS/Defacing.md",
+    "XSS/XSS Discovery.md",
+    "XSS/Cross-Site Scripting (XSS) - cheatsheet.pdf",
     "XSS/XSS_Cheatsheet.md.tmp.497236.0b9fafc2830b",
     "XSS/Doom XSS.md",
     "XSS/Introduccion.md",
