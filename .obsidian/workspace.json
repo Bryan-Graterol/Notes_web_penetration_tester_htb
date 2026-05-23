@@ -183,8 +183,10 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "ace33301686269ab",
+  "active": "e62731235391b10d",
   "lastOpenFiles": [
+    "README.md",
+    "README.md.tmp.370181.169489f903b4",
     "XSS/XSS_Cheatsheet.md",
     "XSS/Session Hijacking.md",
     "XSS/Phishing.md",
