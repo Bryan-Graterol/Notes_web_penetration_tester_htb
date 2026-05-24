@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "1ead42dc07c1c690",
@@ -185,10 +186,12 @@
   },
   "active": "e62731235391b10d",
   "lastOpenFiles": [
-    "README.md",
-    "README.md.tmp.370181.169489f903b4",
-    "XSS/XSS_Cheatsheet.md",
     "XSS/Session Hijacking.md",
+    "XSS/XSS_Cheatsheet.md",
+    "README.md",
+    "XSS/XSS_Cheatsheet.md.tmp.58754.5474e65c711c",
+    "XSS/XSS_Cheatsheet.md.tmp.58754.f4e16a919997",
+    "README.md.tmp.370181.169489f903b4",
     "XSS/Phishing.md",
     "XSS/Defacing.md",
     "XSS/XSS Discovery.md",
