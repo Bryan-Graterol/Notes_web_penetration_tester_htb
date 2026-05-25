@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2738c447ec898429",
+        "id": "284295a51f213647",
         "type": "tabs",
         "children": [
           {
-            "id": "e62731235391b10d",
+            "id": "26fce4892114341d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "XSS/XSS_Cheatsheet.md",
+                "file": "SQL Injection/Intro to SQL Injections.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "XSS_Cheatsheet"
+              "title": "Intro to SQL Injections"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "1ead42dc07c1c690",
@@ -184,10 +183,19 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "e62731235391b10d",
+  "active": "26fce4892114341d",
   "lastOpenFiles": [
-    "XSS/Session Hijacking.md",
+    "SQL Injection/SQL Operators.md",
+    "SQL Injection/Intro to SQL Injections.md",
+    "SQL Injection/Query Results.md",
+    "SQL Injection/Types of databases.md",
+    "SQL Injection/SQL Statements.md",
+    "SQL Injection/Intro to MySQL.md",
+    "SQL Injection/Introduction to databases.md",
+    "SQL Injection/Introduction.md",
+    "SQL Injection",
     "XSS/XSS_Cheatsheet.md",
+    "XSS/Session Hijacking.md",
     "README.md",
     "XSS/XSS_Cheatsheet.md.tmp.58754.5474e65c711c",
     "XSS/XSS_Cheatsheet.md.tmp.58754.f4e16a919997",
