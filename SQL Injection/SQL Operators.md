@@ -83,4 +83,4 @@ Next, we have two comparison operations, `>` and `!=`. Both of these are of t
 
 We will see a few other scenarios of operator precedence in the upcoming sections.
 
-NEXT:
+NEXT:[[Intro to SQL Injections]]

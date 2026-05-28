@@ -13,4 +13,4 @@ I will also upload my personal Notes over time, but for now I'm uploading my Che
 
 ## Modules
 
-- [XSS](./XSS/)
+- [XSS]

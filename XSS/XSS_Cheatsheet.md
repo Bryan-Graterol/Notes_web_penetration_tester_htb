@@ -292,3 +292,5 @@ Luego recargar la pagina para acceder como la victima.
 10. Phishing      → document.write(form) + php listener (Reflected/Stored)
 11. Session Hijack → Blind XSS: script src + new Image().src + cookie (Blind/Stored)
 ```
+
+NEXT:[[Cross-Site Scripting (XSS) - cheatsheet.pdf]]

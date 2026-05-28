@@ -112,7 +112,9 @@ http://SERVER_IP:PORT/hijacking/index.php
 ![Storage tab showing cookie details: Name 'cookie', Value 'f904f93c949d19d870911bf8b05fe7b2', Path '/hijacking', Size 38.](https://cdn.services-k8s.prod.aws.htb.systems/content/modules/103/xss_blind_set_cookie_2.jpg)
 
 Once we set our cookie, we can refresh the page and we will get access as the victim:
-
+f
 http://SERVER_IP:PORT/hijacking/login.php
 
 ![Welcome Back Admin.](https://cdn.services-k8s.prod.aws.htb.systems/content/modules/103/xss_blind_hijacked_session.jpg)
+
+NEXT:[[XSS Prevention]]

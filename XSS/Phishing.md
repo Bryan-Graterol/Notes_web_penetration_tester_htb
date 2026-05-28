@@ -124,3 +124,5 @@ If we check the `creds.txt` file in our Pwnbox, we see that we did get the log
 `bryan25@htb[/htb]$ cat creds.txt Username: test | Password: test`
 
 With everything ready, we can start our PHP server and send the URL that includes our XSS payload to our victim, and once they log into the form, we will get their credentials and use them to access their accounts.
+
+NEXT:[[Session Hijacking]]

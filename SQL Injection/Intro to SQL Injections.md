@@ -96,4 +96,4 @@ Finally, in some cases, we may not have direct access to the output whatsoever, 
 
 In this module, we will only be focusing on introducing SQL injections through learning about `Union Based` SQL injection.
 
-NEXT
+NEXT: [[Subverting Query Logic]]
