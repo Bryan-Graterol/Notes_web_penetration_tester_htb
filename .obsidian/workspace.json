@@ -4,24 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "6a31b6a0388a3173",
+        "id": "16ab83993595206a",
         "type": "tabs",
         "children": [
           {
-            "id": "1b8ba04b01fbf527",
+            "id": "1845139c8284dbf4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "SQLMap Essentials/Getting Started with SQLMap.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Getting Started with SQLMap"
+            }
+          },
+          {
+            "id": "b3bb274d81afd62f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SQL Injection/Query Results.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Query Results"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -41,7 +56,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Explorador de archivos"
@@ -78,7 +95,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 360.5
+    "width": 200
   },
   "right": {
     "id": "1ead42dc07c1c690",
@@ -183,39 +200,43 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "1b8ba04b01fbf527",
+  "active": "b3bb274d81afd62f",
   "lastOpenFiles": [
-    "SQL Injection/Introduction.md",
+    "SQL Injection/Introduction to databases.md",
+    "SQL Injection/Intro to SQL Injections.md",
+    "SQLMap Essentials/Getting Started with SQLMap.md",
+    "SQLMap Essentials/Introduction.md",
+    "SQLMap Essentials/SQLMap output Description.md",
+    "SQLMap Essentials/Running SQLMap on an HTTP Request.md",
+    "SQLMap Essentials/Untitled Diagram.svg",
     "README.md",
+    "Notes.md",
+    "SQL Injection/Introduction.md",
+    "SQL Injection/Cheatsheet.md",
+    "SQLMap Essentials",
+    "SQL Injection/Subverting Query Logic.md",
+    "SQL Injection/Intro to MySQL.md",
+    "SQL Injection/Database Enumeration.md",
+    "XSS/XSS_Cheatsheet.md",
+    "SQL Injection/Cheatsheet.md.tmp.37558.68f33e64b4de",
+    "SQL Injection/Writing Files.md",
+    "SQL Injection/Mitigating SQL Injection.md",
+    "SQL Injection/Reading Files.md",
+    "SQL Injection/Union Injection.md",
+    "SQL Injection/Union Clause.md",
     "XSS/Introduccion.md",
     "[Introduction.md",
     "[[Introduction]].md",
     "().md",
-    "SQL Injection/Union Clause.md",
     "SQL Injection/Using Comments.md",
-    "SQL Injection/Subverting Query Logic.md",
-    "SQL Injection/Intro to SQL Injections.md",
     "SQL Injection/SQL Operators.md",
     "SQL Injection/Query Results.md",
-    "SQL Injection/Introduction to databases.md",
-    "SQL Injection/Intro to MySQL.md",
-    "SQL Injection/Types of databases.md",
-    "XSS/XSS_Cheatsheet.md",
-    "XSS/XSS Prevention.md",
-    "XSS/Session Hijacking.md",
-    "XSS/Phishing.md",
-    "XSS/Stored XSS.md",
-    "XSS/XSS Discovery.md",
     "XSS/Cross-Site Scripting (XSS) - cheatsheet.pdf",
-    "SQL Injection/SQL Statements.md",
     "SQL Injection",
     "XSS/XSS_Cheatsheet.md.tmp.58754.5474e65c711c",
     "XSS/XSS_Cheatsheet.md.tmp.58754.f4e16a919997",
     "README.md.tmp.370181.169489f903b4",
-    "XSS/Defacing.md",
     "XSS/XSS_Cheatsheet.md.tmp.497236.0b9fafc2830b",
-    "XSS/Doom XSS.md",
-    "XSS/Reflected XSS.md",
     "XSS"
   ]
 }

@@ -1,4 +1,3 @@
-# XSS Cheatsheet
 
 ## Tipos de XSS — Referencia Rápida
 

