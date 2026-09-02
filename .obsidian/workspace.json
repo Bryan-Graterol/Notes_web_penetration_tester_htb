@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "16ab83993595206a",
+        "id": "d1fcc3818aebcb24",
         "type": "tabs",
         "children": [
           {
-            "id": "1845139c8284dbf4",
+            "id": "5ed7bc7582957f48",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SQLMap Essentials/Getting Started with SQLMap.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Getting Started with SQLMap"
-            }
-          },
-          {
-            "id": "b3bb274d81afd62f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SQL Injection/Query Results.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Query Results"
+              "title": "README"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -200,24 +185,25 @@
       "bases:Crear nueva base": false
     }
   },
-  "active": "b3bb274d81afd62f",
+  "active": "5ed7bc7582957f48",
   "lastOpenFiles": [
+    "Notes.md",
+    "README.md",
+    "SQLMap Essentials/Getting Started with SQLMap.md",
+    "XSS/XSS_Cheatsheet.md",
+    "SQL Injection/Query Results.md",
     "SQL Injection/Introduction to databases.md",
     "SQL Injection/Intro to SQL Injections.md",
-    "SQLMap Essentials/Getting Started with SQLMap.md",
     "SQLMap Essentials/Introduction.md",
     "SQLMap Essentials/SQLMap output Description.md",
     "SQLMap Essentials/Running SQLMap on an HTTP Request.md",
     "SQLMap Essentials/Untitled Diagram.svg",
-    "README.md",
-    "Notes.md",
     "SQL Injection/Introduction.md",
     "SQL Injection/Cheatsheet.md",
     "SQLMap Essentials",
     "SQL Injection/Subverting Query Logic.md",
     "SQL Injection/Intro to MySQL.md",
     "SQL Injection/Database Enumeration.md",
-    "XSS/XSS_Cheatsheet.md",
     "SQL Injection/Cheatsheet.md.tmp.37558.68f33e64b4de",
     "SQL Injection/Writing Files.md",
     "SQL Injection/Mitigating SQL Injection.md",
@@ -230,7 +216,6 @@
     "().md",
     "SQL Injection/Using Comments.md",
     "SQL Injection/SQL Operators.md",
-    "SQL Injection/Query Results.md",
     "XSS/Cross-Site Scripting (XSS) - cheatsheet.pdf",
     "SQL Injection",
     "XSS/XSS_Cheatsheet.md.tmp.58754.5474e65c711c",
