@@ -87,3 +87,4 @@ However, in the case of a complex or long POST body, we can once again use the `
 
 `bryan25@htb[/htb]$ sqlmap -r req.txt         ___        __H__  ___ ___[(]_____ ___ ___  {1.4.9} |_ -| . [)]     | .'| . | |___|_  [']_|_|_|__,|  _|       |_|V...       |_|   http://sqlmap.org   [*] starting @ 00:03:44 /2020-09-15/  [00:03:44] [INFO] parsing HTTP request from 'req.txt' JSON data found in HTTP body. Do you want to process it? [Y/n/q]  [00:03:45] [INFO] testing connection to the target URL [00:03:45] [INFO] testing if the target URL content is stable [00:03:46] [INFO] testing if HTTP parameter 'JSON type' is dynamic [00:03:46] [WARNING] HTTP parameter 'JSON type' does not appear to be dynamic [00:03:46] [WARNING] heuristic (basic) test shows that HTTP parameter 'JSON type' might not be injectable`
 
+Next:[[Handling SQLMap Errors]]

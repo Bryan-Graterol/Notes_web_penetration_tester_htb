@@ -124,4 +124,4 @@ Following after is a listing of all injection points with type, title, and paylo
 
 This indicates the local file system location used for storing all logs, sessions, and output data for a specific target - in this case, `www.example.com`. After such an initial run, where the injection point is successfully detected, all details for future runs are stored inside the same directory's session files. This means that SQLMap tries to reduce the required target requests as much as possible, depending on the session files' data.
 
-Next:
+Next:[[Running SQLMap on an HTTP Request]]
